@@ -15,7 +15,7 @@ body, html {
 /* LADO ESQUERDO: Cor Azul */
 .image-section {
     flex: 1.2;
-    background-image: url('Almoxarifado.jpg'); /* Verifique se o nome do arquivo está idêntico ao da pasta */
+    background-image: url('Vampeta-CLT.png'); /* Verifique se o nome do arquivo está idêntico ao da pasta */
     background-size: cover;     /* Isso faz a imagem preencher o espaço */
     background-position: top center; /* Foca no topo para não cortar as cabeças */
     background-position: 100% center;
