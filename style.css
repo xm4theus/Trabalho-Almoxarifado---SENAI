@@ -1,78 +1,90 @@
-/* Reset padrão */
-body {
+/* Reset básico para tirar espaços em branco das bordas */
+body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 .page-container {
-    display: flex;
-    height: 100vh;
+    display: flex; /* Divide a tela em colunas */
     width: 100%;
+    height: 100vh;
 }
 
-/* Lado Esquerdo - Cor de destaque e Imagem */
+/* LADO ESQUERDO: Cor Azul */
 .image-section {
     flex: 1.2;
-    background-color: #4354d0; /* Um azul mais vivo como no seu rascunho */
+    background-image: url('Almoxarifado.jpg'); /* Verifique se o nome do arquivo está idêntico ao da pasta */
+    background-size: cover;     /* Isso faz a imagem preencher o espaço */
+    background-position: top center; /* Foca no topo para não cortar as cabeças */
+    background-position: 100% center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
 }
 
-/* Lado Direito - Fundo Branco */
+/* LADO DIREITO: Cor Branca */
 .login-section {
-    flex: 0.8;
-    background-color: #ffffff; /* Fundo branco como no rascunho */
+    flex: 0.8; /* Ocupa o restante da tela */
+    background-color: #192a6b; /* Fundo branco conforme o rascunho */
     display: flex;
-    flex-direction: column; /* Faz o título ficar em cima do bloco */
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-/* Título superior */
-.main-title {
-    font-size: 2.5rem;
-    color: #000;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    text-align: left;
+/* Agrupador do título + formulário */
+.login-wrapper {
     width: 100%;
     max-width: 350px;
 }
 
-/* Bloco de Login */
+.logo-topo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Bloco de login original (com sombra para aparecer no fundo branco) */
 .login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte para destacar no branco */
     width: 100%;
-    max-width: 350px;
-    padding: 30px;
-    border: 2px solid #000; /* Borda preta como no desenho */
-    border-radius: 15px;    /* Cantos bem arredondados */
+    box-sizing: border-box;
 }
 
-/* Estilo dos Inputs (Mais arredondados e borda forte) */
+/* Estilos internos do formulário (iguais aos que você já tinha) */
+h2 { text-align: center; color: #333; margin-bottom: 20px; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; margin-bottom: 5px; color: #555; }
 .input-group input {
     width: 100%;
-    padding: 12px;
-    border: 2px solid #000; /* Borda preta marcada */
-    border-radius: 25px;    /* Inputs estilo "pílula" como no rascunho */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 5px;
 }
 
-/* Botão Laranja */
 button {
     width: 100%;
     padding: 12px;
-    background-color: #ff9500;
+    background-color: #ff9500; /* Laranja original */
     color: #192a6b;
     font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 10px;
 }
+
+button:hover {
+    background-color: #e68600;
+}
+
+.footer-text { text-align: center; margin-top: 15px; font-size: 14px; }
