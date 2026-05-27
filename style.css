@@ -1,54 +1,78 @@
+/* Reset padrão */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #192a6b;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.login-container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 350px;
+.page-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
 
-h2 {
+/* Lado Esquerdo - Cor de destaque e Imagem */
+.image-section {
+    flex: 1.2;
+    background-color: #4354d0; /* Um azul mais vivo como no seu rascunho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
     text-align: center;
-    color: #333;
 }
 
-.input-group {
+/* Lado Direito - Fundo Branco */
+.login-section {
+    flex: 0.8;
+    background-color: #ffffff; /* Fundo branco como no rascunho */
+    display: flex;
+    flex-direction: column; /* Faz o título ficar em cima do bloco */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título superior */
+.main-title {
+    font-size: 2.5rem;
+    color: #000;
     margin-bottom: 20px;
+    line-height: 1.1;
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
+/* Bloco de Login */
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    border: 2px solid #000; /* Borda preta como no desenho */
+    border-radius: 15px;    /* Cantos bem arredondados */
 }
 
+/* Estilo dos Inputs (Mais arredondados e borda forte) */
 .input-group input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do campo */
+    padding: 12px;
+    border: 2px solid #000; /* Borda preta marcada */
+    border-radius: 25px;    /* Inputs estilo "pílula" como no rascunho */
+    box-sizing: border-box;
+    margin-top: 5px;
 }
 
+/* Botão Laranja */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #ff9500;
     color: #192a6b;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #e68600;
+    margin-top: 20px;
 }
