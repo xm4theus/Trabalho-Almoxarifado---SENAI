@@ -25,4 +25,4 @@ loginForm.addEventListener('submit', function(event) {
         // Alerta caso erre os dados
         alert("Usuário ou senha incorretos! Tente novamente.");
     }
-});
+}); //comentario pra atualizar no git 1
